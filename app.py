@@ -87,7 +87,7 @@ if st.button("Generate Flashcards", type="primary"):
                 contents.append(user_notes)
 
             response = client.models.generate_content(
-                model="gemini-2.5-flash-lite",
+                model="gemini-2.5-pro",
                 contents=contents,
                 config=types.GenerateContentConfig(
                     temperature=0.2,
